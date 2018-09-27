@@ -7,15 +7,9 @@ Update:  6/4/18 - Program reads function A, compute the derivatives (Gx & Gy), p
              2/5/18 - Implemented Method 3 to compare A & B and plot them.  Added Component and Angle comparison and plot them.
              9/5/18 - Made everything 3D
 '''
-#import matplotlib
-#import numpy.core._methods
-#import numpy.lib.format
 import numpy as np
 import math
 import csv
-#from tkinter import *
-#matplotlib.use('agg')
-#import matplotlib.backends.backend
 import matplotlib.pyplot as plt
 
 
@@ -658,56 +652,3 @@ plt.legend(loc='best')
 GxVSBx.tight_layout()
 GxVSBx.show()
 plt.savefig('plots/Figure_19.pdf')
-
-
-
-
-    
-
-'''
-##################################################################
-
-###plot GX and BX values of function A and B ###
-GxVSBx= plt.figure(20,figsize=(12,5))
-#plt.plot(index_m,Gx,'b',label="Function A")
-#plt.plot(index_m,resized_Bx,'g',label="Function B")
-plt.plot(index_m,GxBx_comparison,'r', label = "Division of Gx / Bx" )
-plt.title("Comparison Section, Division of Gx / Bx")
-plt.xlabel('Index(t)')
-plt.ylabel('Division of Gx / Bx')
-plt.legend(loc='best')
-GxVSBx.tight_layout()
-GxVSBx.show()
-plt.savefig('plots/Figure_20.pdf')
-
-###plot GY and BY values of function A and B ###
-GyVSBy= plt.figure(21,figsize=(12,5))
-#plt.plot(index_m,Gy,'b',label="Function A")
-#plt.plot(index_m,resized_By,'g',label="Function B")
-plt.plot(index_m,GyBy_comparison,'r', label = "Division of Gy / By" )
-plt.title("Comparison Section, Division of Gy / By")
-plt.xlabel('Index')
-plt.ylabel('Division of Gy / By')
-plt.legend(loc='best')
-GyVSBy.tight_layout()
-GyVSBy.show()
-plt.savefig('plots/Figure_21.pdf')
-
-
-###plot GZ and BZ values of function A and B ###
-GzVSBz= plt.figure(22,figsize=(12,5))
-#plt.plot(index_m,Gy,'b',label="Function A")
-#plt.plot(index_m,resized_By,'g',label="Function B")
-plt.plot(index_m,GzBz_comparison,'r', label = "Division of Gz / Bz" )
-plt.title("Comparison Section, Division of Gz / Bz")
-plt.xlabel('Index')
-plt.ylabel('Division of Gz / Bz')
-plt.legend(loc='best')
-GzVSBz.tight_layout()
-GzVSBz.show()
-plt.savefig('plots/Figure_22.pdf')
-'''
-
-
-
-
